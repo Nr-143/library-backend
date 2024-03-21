@@ -1,7 +1,5 @@
 package com.example.nirmal.fullstackbackend.controller;
-
 import com.example.nirmal.fullstackbackend.model.BookReturn;
-import com.example.nirmal.fullstackbackend.model.User;
 import com.example.nirmal.fullstackbackend.repository.returnRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

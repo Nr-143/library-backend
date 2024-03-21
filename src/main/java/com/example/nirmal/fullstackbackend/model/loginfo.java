@@ -6,9 +6,10 @@ public class loginfo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstname;
-    private String secondname;
-    private String username;
+    private String Name;
+    private Long regno;
+    private String department;
+    private int year;
     private String email;
     private String password;
 
@@ -20,28 +21,36 @@ public class loginfo {
         this.id = id;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getName() {
+        return Name;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setName(String name) {
+        Name = name;
     }
 
-    public String getSecondname() {
-        return secondname;
+    public Long getRegno() {
+        return regno;
     }
 
-    public void setSecondname(String secondname) {
-        this.secondname = secondname;
+    public void setRegno(Long regno) {
+        this.regno = regno;
     }
 
-    public String getUsername() {
-        return username;
+    public int getYear() {
+        return year;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {
@@ -52,12 +61,12 @@ public class loginfo {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }
 

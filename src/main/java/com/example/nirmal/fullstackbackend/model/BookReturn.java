@@ -1,5 +1,5 @@
 package com.example.nirmal.fullstackbackend.model;
-
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.*;
 
@@ -17,6 +17,8 @@ public class BookReturn {
     // private Date dateOfReturn=new Date();
     @Temporal(TemporalType.DATE)
     private Date date;
+
+    @JsonFormat(pattern="yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     private Date date2;
 
